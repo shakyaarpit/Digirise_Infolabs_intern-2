@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.contaner {
+  background: linear-gradient(90deg, #b7b78a 50%, #3c6255 50%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: #dddddd;
+  width: 90%;
+  height: 90vh;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.navlist a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  margin-left: 30px;
+}
+.navlist a:hover {
+  border-bottom: 2px solid black;
+}
+.logo a img {
+  height: 80px;
+}
+.logo a {
+  text-align: center;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 90%;
+  margin: auto;
+}
+.hero img {
+  height: 300px;
+  margin-top: 15%;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+.hero .content {
+  margin-top: 8%;
+  border-left: 5px solid #3c6255;
+}
+.same {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.content h1 {
+  padding-left: 27px;
+  margin: 12px 0;
+  color: #3c6255;
+  font-size: 50px;
+}
+.content button {
+  margin-top: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #3c6255;
+  color: white;
+  border: none;
+}
+.content button:hover {
+  background-color: white;
+  color: black;
+}
+.content p {
+  line-height: 23px;
+}
+
+
+
+.barger span {
+  width: 15px;
+  height: 3px;
+  background-color: black;
+  display: block;
+  margin: 5px;
+}
+.barger span:nth-child(2) {
+  width: 30px;
+}
+.barger {
+  display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .content h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .content h1 {
+    font-size: 30px;
+    margin: 3px 0;
+    padding-left: 23px;
+  }
+  .content p {
+    line-height: 20px;
+  }
+  .same {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .hero img {
+    height: 270px;
+  }
+}
+
+@media only screen and (max-width: 796px) {
+  .card {
+    position: relative;
+    overflow: hidden;
+  }
+  .navlist {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    right: -70%;
+    flex-direction: column;
+    background-color: #b7b78a;
+    transition: 0.5s ease-in-out;
+  }
+  .navlist a {
+    margin-top: 40px;
+    font-size: 1.2rem;
+  }
+  .navlist-active {
+    top: 0;
+  }
+  .barger {
+    display: block;
+    z-index: 5;
+  }
+  .hero img {
+    display: none;
+  }
+
+  .content h1 {
+    font-size: 50px;
+    padding-left: 18px;
+  }
+  .content p {
+    line-height: 27px;
+  }
+  .same {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
