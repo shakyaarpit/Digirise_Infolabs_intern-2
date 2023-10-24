@@ -72,6 +72,7 @@
   background-color: #3c6255;
   color: white;
   border: none;
+  cursor: pointer;
 }
 .content button:hover {
   background-color: white;
